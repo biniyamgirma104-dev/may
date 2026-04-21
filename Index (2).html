@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matiyas Dejene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1100px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        /* Marketplace section */
+        .market-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .market-item {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .market-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .market-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            object-fit: cover;
+            height: 150px;
+        }
+
+        .market-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .market-item p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .market-item .price {
+            font-weight: bold;
+            color: #2c7;
+            margin-bottom: 10px;
+        }
+
+        .market-item button {
+            background-color: #2c7;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .market-item button:hover {
+            background-color: #249c53;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Matiyas Dejene</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Marketplace</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Hello! My name is <strong>Matiyas Dejene</strong>. I was born in Kotebe, Hana Maryam. Welcome to my website where you can learn more about me and my marketplace items!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Family:</strong></p>
+        <ul>
+            <li>Father: Dejene</li>
+            <li>Mother: Tadelech Megersa</li>
+            <li>Brothers: Dagm and Yohans</li>
+        </ul>
+        <p><strong>Hobbies & Interests:</strong></p>
+        <ul>
+            <li>Boxing 🥊</li>
+            <li>Food lover 🍲</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Marketplace Items</h2>
+        <div class="market-container">
+            <div class="market-item">
+                <img src="https://images.unsplash.com/photo-1604908177520-abe35f52c2f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjUyNDR8MHwxfHNlYXJjaHwxfHx0b21hdG9lc3xlbnwwfHx8fDE2OTIwMjYyMzY&ixlib=rb-4.0.3&q=80&w=400" alt="Tomatoes">
+                <h3>Tomatoes</h3>
+                <p>Fresh red tomatoes, perfect for salads and cooking.</p>
+                <p class="price">$2 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="market-item">
+                <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e12c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Bananas">
+                <h3>Bananas</h3>
+                <p>Sweet and ripe bananas, great for snacks and desserts.</p>
+                <p class="price">$1.5 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="market-item">
+                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Rice">
+                <h3>Rice</h3>
+                <p>High-quality rice for daily cooking needs.</p>
+                <p class="price">$3 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="market-item">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Chicken">
+                <h3>Chicken</h3>
+                <p>Fresh chicken, cleaned and ready to cook.</p>
+                <p class="price">$7 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="market-item">
+                <img src="https://images.unsplash.com/photo-1589712231269-c55f1a6c0e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Milk">
+                <h3>Milk</h3>
+                <p>Pure dairy milk, fresh from the farm.</p>
+                <p class="price">$2 / liter</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="support">
+        <h2>Support</h2>
+        <p>If you need help or want to get in touch, you can contact me through email or social media. I’m happy to provide guidance or answer questions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <strong>matiyas@example.com</strong> (replace with real email)</p>
+        <p>Social Media: <strong>@matiyasdejene</strong> (replace with your real accounts)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Matiyas Dejene | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
